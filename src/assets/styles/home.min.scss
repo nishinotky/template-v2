@@ -1,0 +1,15 @@
+// Utils
+@use 'utils/easing' as ease;
+@use 'utils/config' as config;
+@use 'utils/mixins' as mixins;
+@use 'utils/variables' as var;
+
+h1 {
+  color: #f00;
+  @include mixins.mq-up() {
+    font-size: 60px;
+  }
+  @include mixins.mq-down() {
+    font-size: 35px;
+  }
+}

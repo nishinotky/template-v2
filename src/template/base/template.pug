@@ -1,0 +1,12 @@
+include ../data/meta
+
+block page
+doctype html
+html(lang="ja")
+  include ./head
+  body
+    .l-container
+      include ../layout/header
+      block main
+      include ../layout/footer
+    block script
