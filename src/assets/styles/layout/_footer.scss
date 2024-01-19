@@ -1,0 +1,8 @@
+@use '../utils/easing' as ease;
+@use '../utils/config' as config;
+@use '../utils/mixins' as mixins;
+@use '../utils/variables' as var;
+
+footer {
+  font-size: var.$fontMedium;
+}

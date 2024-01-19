@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "static-boilerplate",
+  "name": "template-v2",
   "version": "1.0.0",
-  "description": "sonicjam static boilerplate",
+  "description": "template for creating static websites",
   "scripts": {
     "build:pug": "pug src/html/ --hierarchy -o .tmp/ -P",
     "build:scss": "sass src:.tmp --style compressed",
@@ -26,7 +26,7 @@
     "build": "npm-run-all clean:dist -p build:pug build:scriptBuild -s build:scss build:css build:img -p copy:*",
     "prod": "npm-run-all clean:prod -p build:pug build:scriptProd -s build:scss build:css build:imgProd -p copy-prod:*"
   },
-  "author": "mariko tsutsumi <mariko.tsutsumi@sonicjam.co.jp>",
+  "author": "Nishino Takuya",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.4.0",
